@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Transaction Dashboard</h1>
+
+    <!-- Month Selection -->
+    <div class="month-selector">
+      <label for="month">Select Month: </label>
+      <select id="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March" selected>March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search transactions...">
+    </div>
+
+    <!-- Transactions Table -->
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Sold</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Transaction rows will go here -->
+      </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+
+    <!-- Statistics -->
+    <div class="statistics">
+      <div>
+        <h3>Total Sale Amount: $<span id="total-sales">0</span></h3>
+      </div>
+      <div>
+        <h3>Total Sold Items: <span id="sold-items">0</span></h3>
+      </div>
+      <div>
+        <h3>Total Not Sold Items: <span id="not-sold-items">0</span></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
